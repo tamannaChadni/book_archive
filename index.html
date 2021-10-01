@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- custom stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Book Archive</title>
+</head>
+
+<body>
+
+    <header></header>
+
+    <!-- ============================
+        =START MAIN
+    ============================= -->
+    <main class="my-5">
+        <!-- Book search input section -->
+        <section class="book-search mb-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-5">
+                        <div class="input-group mb-3">
+                            <input id="search-input" type="text" class="form-control" placeholder="Enter a book name">
+                            <button class="btn btn-lg btn-primary" type="button" id="search-button">Search</button>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </section>
+
+        <!-- spinner section(it is active when loading data) -->
+        <section id="data-loader" class="">
+            <div class="d-flex justify-content-center">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- search result count section -->
+        <section id="search-result-count">
+            <div id="result-count" class="container">
+                <!-- _____________________________
+                    # result count goes here
+                _____________________________ -->
+            </div>
+        </section>
+
+        <!-- Search result section -->
+        <section id="search-result">
+            <div class="container">
+                <div id="search-items" class="row g-4">
+                    <!-- _____________________________
+                        # search items goes here
+                    _____________________________ -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- ============================
+        =END MAIN
+    ============================= -->
+
+    <footer></footer>
+
+    <!-- Bootstrap script -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- custom scripts -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
